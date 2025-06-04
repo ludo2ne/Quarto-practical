@@ -1,0 +1,28 @@
+---
+title: "R code"
+author: "Me"
+format: html
+from: markdown+emoji
+code-block-bg: true
+code-block-border-left: "#31BAE9"
+---
+
+```{R}
+alpha <- 0.5
+beta <- 0.5
+n_values <- 500
+
+set.seed(123)
+beta_values <- rbeta(n = n_values, shape1 = alpha, shape2 = beta)
+
+plot(density(beta_values),
+     main = expression(paste("Density of Beta(", alpha, " = 0.5, ", beta, " = 0.5) Distribution")),
+     xlab = "Value",
+     ylab = "Density",
+     col = "blue",
+     lwd = 2,
+     cex.main = 1.2,
+     cex.lab = 1.1,
+     cex.axis = 1.0
+)
+```

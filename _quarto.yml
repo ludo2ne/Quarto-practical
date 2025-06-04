@@ -1,0 +1,25 @@
+  project:
+    type: website
+  
+  website:
+    title: "Quarto tutorial"
+    navbar:
+      background: lightseagreen
+      left:
+        - href: index.qmd
+          text: Home
+        - text: Examples with code
+          menu:
+            - href: doc/r.qmd
+              text: "R code"
+            - href: doc/python.qmd
+              text: "Python code"
+      right:
+        - about.qmd  
+
+  format:
+    html:
+      theme:
+        dark: solar
+        light: cosmo
+      css: styles.css

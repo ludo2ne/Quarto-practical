@@ -1,0 +1,16 @@
+---
+title: "Quarto-practical"
+description: "Let's have fun with Quarto"
+author: "Me"
+format: html
+from: markdown+emoji
+---
+
+
+## Quarto 
+
+- [External link to Quarto website](https://quarto.org/){target="_blank"}
+- [R example](doc/r.qmd)
+- [Python example](doc/python.qmd) :snake:
+
+[a button]{.green-button}
